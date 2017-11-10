@@ -1,0 +1,47 @@
+/**
+ * @Author: Jecyu
+ * @Date: 2017-11-10 7:56:43 pm 
+ * @Modified By: JeCyu 
+ * @Last Modified time: 2017-11-10 11:06:31 pm 
+ */
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.pagination li {
+    float: left;
+    height: 30px;
+    width: 30px;
+    color: lightgreen;
+    border: 1px solid #aaa;
+    text-align: center;
+    line-height: 30px; 
+    background: #fff;
+}
+
+.pagination li a {
+    text-decoration: none; 
+    color: darkcyan;
+}
+
+.pagination li a.active {
+    background: lightgreen;
+}
+    
+.pagination li:hover {
+    background: lightgreen;
+}
+
+.form-groups label {
+    width: 100px;
+}

@@ -1,0 +1,31 @@
+<!-- v-bind指令可以在其名称后面带一个参数，中间放一个冒号隔开，这个参数通常是HTML元素的特性（attribute），例如：v-bind:class v-bind:argument="expression" -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    <title>page分页</title>
+</head>
+<body>
+    <div id="app">
+        <ul class="pagination">
+            <li v-for="n in pageCount">
+                <a href="javascript:void(0)" 
+                v-bind:class="activeNumber === n + 1 ? 'active':''">{{ n }}</a>
+            </li>
+        </ul>
+    </div>
+    <script src="../../public/js/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                activeNumber: 1,
+                pageCount: 10
+            }
+        })
+    </script>
+</body>
+</html>
